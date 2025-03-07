@@ -31,7 +31,7 @@
 
 .about-soft-content,
 .about-tech-content {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .about-me-description-list {
@@ -94,14 +94,11 @@
     display: flex;
     justify-content: space-around;
     text-align: left;
+    padding-bottom: 20px;
   }
 
   .about-soft-content {
     margin-bottom: 50px;
-  }
-  .about-soft-content,
-  .about-tech-content {
-    margin-bottom: 40px;
   }
 
   .about-me-description {

@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:wght@200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
@@ -23,12 +24,15 @@
     <link rel="stylesheet" href="./src/css/footer.css" />
   </head>
   <body>
+
+  
+       
     <!-- header -->
     <header>
       <div class="container header-content">
         <a href="index.html" class="header-logo-link">
           <div class="header-logo">
-            <span class="header-logo-text">VB</span>
+            <span class="header-logo-text" data-lang="logo">VB</span>
             <img
               class="header-img"
               src="./src/img/WW7A71731111.jpg"
@@ -45,10 +49,10 @@
         </button>
         <nav class="nav-menu" id="nav-menu">
           <ul class="header-list">
-            <li class="header-item"><a href="#About me">About me</a></li>
-            <li class="header-item"><a href="#Projects">Projects</a></li>
-            <li class="header-item"><a href="#Education">Education</a></li>
-            <li class="header-item"><a href="#Contacts">Contacts</a></li>
+            <li class="header-item" data-lang="about"><a href="#About-me">About me</a></li>
+            <li class="header-item" data-lang="project"><a href="#Projects">Projects</a></li>
+            <li class="header-item" data-lang="education"><a href="#Education">Education</a></li>
+            <li class="header-item" data-lang="contacts"><a href="#Contacts">Contacts</a></li>
           </ul>
         </nav>
 
@@ -80,20 +84,22 @@
             </button>
             <select id="languages">
               <option value="en">EN</option>
-              <option value="ua">UK</option>
+              <option value="ua">UA</option>
             </select>
           </div>
         </div>
       </div>
     </header>
     <main>
+
+
       <!-- hero -->
       <section class="Hero">
         <div class="container hero-content">
           <div class="hero-description">
-            <h1 class="hero-title">Frontend Devoleper</h1>
-            <p class="hero-name">Viktor Baratej</p>
-            <p class="hero-text">
+            <h1 class="hero-title" data-lang="title">Frontend Devoleper</h1>
+            <p class="hero-name" data-lang="name">Viktor Baratej</p>
+            <p class="hero-text" data-lang="you">
               Hello! I'm Viktor, I build interactive and stylish interfaces that
               captivate from the first click.
             </p>
@@ -101,7 +107,7 @@
               <a
                 href="./CV_ViktorBaratejj.pdf"
                 download
-                class="hero-btn"
+                class="hero-btn" data-lang="tbn"
               >
                 Download CV
               </a>
@@ -115,10 +121,10 @@
       </section>
 
       <!-- about me -->
-      <section id="About me">
+      <section id="About-me">
         <div class="container about-me-container">
-          <h2 class="about-me-title">About me</h2>
-          <p class="about-me-text">
+          <h2 class="about-me-title" data-lang="about">About me</h2>
+          <p class="about-me-text" data-lang="about_text">
             Hello! I am a frontend developer who is passionate about building
             web applications. I have knowledge of HTML, CSS, and JavaScript, as
             well as experience in creating React projects and TypeScript. I
@@ -128,20 +134,20 @@
             potential by working on innovative products in a professional team.
           </p>
           <div class="about-soft-content">
-            <h3 class="about-me-description">Soft Skills:</h3>
+            <h3 class="about-me-description" data-lang="sof">Soft Skills:</h3>
             <ul class="about-me-description-list">
-              <li class="about-me-description-item">- Time management</li>
-              <li class="about-me-description-item">
+              <li class="about-me-description-item" data-lang="soft">- Time management</li>
+              <li class="about-me-description-item" data-lang="soft1">
                 - Collaboration with colleagues
               </li>
-              <li class="about-me-description-item">- Openness to change</li>
-              <li class="about-me-description-item">- Self-control</li>
-              <li class="about-me-description-item">- Discipline</li>
-              <li class="about-me-description-item">- Responsibility</li>
+              <li class="about-me-description-item" data-lang="soft2">- Openness to change</li>
+              <li class="about-me-description-item" data-lang="soft3">- Self-control</li>
+              <li class="about-me-description-item" data-lang="soft4">- Discipline</li>
+              <li class="about-me-description-item" data-lang="soft5">- Responsibility</li>
             </ul>
           </div>
 
-          <h3 class="about-me-description">Tech Skills:</h3>
+          <h3 class="about-me-description" data-lang="tech">Tech Skills:</h3>
           <div class="about-tech-container">
             <div class="about-tech-content">
               <h4 class="about-me-description-2">Frontend:</h4>
@@ -187,7 +193,7 @@
       <!-- projects -->
       <section id="Projects">
         <div class="container project-container">
-          <h2 class="project-title">My projects</h2>
+          <h2 class="project-title" data-lang="project">My projects</h2>
           <ul id="items">
             <li class="project-item">
               <img
@@ -198,7 +204,7 @@
                 height="50"
               />
               <h4 class="project-item-title">WebStudio</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="1">
                 A website of WebStudio company. Responsive design, transform
                 effects, modal windows.
               </p>
@@ -208,7 +214,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -217,7 +223,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -232,7 +238,7 @@
                 height="50"
               />
               <h4 class="project-item-title">Yachtjet</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="2">
                 Website of a company engaged in the sale and rental of
                 yachts.Yachtjet single page site. Responsive design, compliance
                 with all standards. Excellent work experience.
@@ -243,7 +249,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -252,7 +258,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -270,7 +276,7 @@
               <h4 class="project-item-title">
                 Portfolio (single-page website)
               </h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="3">
                 The goal of the project is to create a prototype portfolio that
                 will allow the student to easily and effectively present their
                 achievements, projects, and skills to their future employer.
@@ -281,7 +287,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -290,7 +296,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -306,7 +312,7 @@
                 height="50"
               />
               <h4 class="project-item-title">Image Search App (JavaScript)</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="4">
                 Developed an image search application in JavaScript using API.
                 Implemented asynchronous requests using fetch and processed the
                 received data. Displayed images as cards with information
@@ -320,7 +326,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -329,7 +335,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -345,7 +351,7 @@
                 height="50"
               />
               <h4 class="project-item-title">Movie Search App (React & API)</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="5">
                 Developed an application for searching and viewing popular
                 movies in React using API. Implemented dynamic loading of
                 trending movies, a page with details about each movie, and
@@ -359,7 +365,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -368,7 +374,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -383,7 +389,7 @@
                 height="50"
               />
               <h4 class="project-item-title">Phonebook (React App)</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="6">
                 Developed a Phonebook application in React to store contacts.
                 Used state (useState) to manage the contact list and filtering.
                 Implemented validation of input data and uniqueness of contacts.
@@ -396,7 +402,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -405,7 +411,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -420,14 +426,14 @@
                 height="50"
               />
               <h4 class="project-item-title">To do list</h4>
-              <p class="project-item-text">To do list manager</p>
+              <p class="project-item-text" data-lang="7">To do list manager</p>
               <a
                 href="https://github.com/Viktor-Baratej/TODO-LIST"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -436,7 +442,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
@@ -452,7 +458,7 @@
                 height="50"
               />
               <h4 class="project-item-title">HTML Table</h4>
-              <p class="project-item-text">
+              <p class="project-item-text" data-lang="8">
                 Created an HTML table for structured data display
               </p>
               <a
@@ -461,7 +467,7 @@
                 rel="noopener noreferrer"
               >
                 <div class="project-btn-content">
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn">
                     <i class="fa-brands fa-github"></i> View Code
                   </button>
                 </a>
@@ -470,34 +476,32 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn">
+                  <button class="project-btn" data-lang="btn1">
                     <i class="fa-solid fa-earth-europe"></i> Live page
                   </button>
                 </a>
                 </div>
             </li>
           </ul>
-
-         
-      </section>
+          </section>
 
       <!-- education -->
       <section id="Education">
         <div class="container education-container">
           <div class="education-content">
-            <h2 class="education-title">Education:</h2>
+            <h2 class="education-title" data-lang="education">Education:</h2>
             <ul class="education-list">
               <li class="education-item">
-                <p class="education-text"> - IT School GOIT (2024 - 2025) - FullStack Developer</p></li>
+                <p class="education-text" data-lang="edu_it"> - IT School GOIT (2024 - 2025) - FullStack Developer</p></li>
               <li>
-                <p class="education-text">
+                <p class="education-text" data-lang="educ_col">
                    - Svalyava Technical College of the National University of Food
                   Technologies (2004 - 2008) - Maintenance of computer and
                   intelligent systems and networks Junior specialist
                 </p>
               </li>
               <li class="education-item">
-                <p class="education-text">
+                <p class="education-text" data-lang="educ_ter">
                    - Svalyavsky Educational and Advisory Center of the Ternopil
                   National University of Economics (2008 - 2011) - Finance and
                   credit (Bachelor)
@@ -506,10 +510,10 @@
             </ul>
           </div>
           <div class="education-lang">
-            <h2 class="education-title">Languages:</h2>
+            <h2 class="education-title" data-lang="lang">Languages:</h2>
             <ul class="education-list">
-              <li class="education-item">Ukrainian - Native</li>
-              <li class="education-item">English – Beginner</li>
+              <li class="education-item" data-lang="lang_ua">Ukrainian - Native</li>
+              <li class="education-item" data-lang="lang_en">English – Beginner</li>
             </ul>
           </div>
         </div>
@@ -522,7 +526,7 @@
     <!-- footer -->
     <footer id="Contacts">
       <div class="container footer-content">
-        <h2 class="footer-title">Contacts:</h2>
+        <h2 class="footer-title" data-lang="contact">Contacts:</h2>
         <div class="footer-dectop">
           <div class="footer-soc-content">
             <ul class="footer-soc-list">
@@ -564,6 +568,7 @@
         </div>
       </div>
     </footer>
+   <script type="module" src="./src/js/lang.js/lang.js"></script>
     <script type="module" src="./src/js/burger.js"></script>
     <script type="module" src="./src/js/scrollToTop.js"></script>
     <script type="module" src="./src/js/theme.js"></script>

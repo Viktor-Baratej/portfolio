@@ -40,7 +40,9 @@
   gap: 30px;
   color: #959595;
 }
+
 .header-item:hover {
+  cursor: pointer;
   background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
   background-clip: text;
   -webkit-background-clip: text;
