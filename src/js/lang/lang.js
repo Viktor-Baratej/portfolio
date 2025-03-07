@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
 
   // Встановлюємо збережене значення в <select> для відображення вибраної мови
-  document.getElementById('languageSwitcher').value = savedLanguage;
+  document.getElementById('languages').value = savedLanguage;
 
   // Викликаємо функцію зміни мови, щоб оновити текст на сторінці
   changeLanguage(savedLanguage);
