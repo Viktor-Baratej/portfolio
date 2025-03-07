@@ -1,10 +1,40 @@
+:root {
+  --bg-color: #f5ede3;
+  --text-color: #4a4a4a;
+  --border-color: 1px solid #959595;
+  --title-color: #cc5d3d;
+  --paragraph-color: #6b6762;
+  --button-bg: #c3b8ab;
+  --button-text: #545252;
+  --button-hover-bg: whitesmoke;
+  --button-hover-text: #545252;
+  --button-scroll-i: whitesmoke;
+  --bg-color-project: #e5e0d8;
+}
+.dark-theme {
+  --bg-color: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95));
+  --text-color: #959595;
+  --border-color: 1px solid #959595;
+  --title-color: linear-gradient(90deg, #fa6e00, #e60026);
+  --paragraph-color: #959595;
+  --button-bg: rgba(255, 255, 255, 0.04);
+  --button-text: #959595;
+  --button-hover-bg: whitesmoke;
+  --button-hover-text: black;
+  --button-scroll-i: rgb(21, 21, 21);
+  --bg-color-project: linear-gradient(
+    rgba(18, 18, 18, 0.95),
+    rgba(18, 18, 18, 0.95)
+  );
+}
+
 body {
   font-family: 'Roboto', 'Open Sans', 'Poppins', sans-serif;
-  color: whitesmoke;
+  color: var(--text-color);
   min-width: 320px;
   overflow-x: hidden;
   line-height: 1.5;
-  background: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95));
+  background: var(--bg-color);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,11 +48,11 @@ html {
 h1,
 h2,
 h3 {
-  background: linear-gradient(90deg, #fa6e00, #e60026);
+  background: var(--title-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;
-  text-decoration-color: #fa6e00;
+  text-decoration-color: var(--title-color);
   text-decoration-thickness: 2px;
 }
 

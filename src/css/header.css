@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #959595;
+  border-bottom: var(--border-color);
 }
 
 .header-logo {
@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 30px;
   letter-spacing: 0.03em;
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,12 +38,12 @@
 .header-list {
   display: flex;
   gap: 30px;
-  color: #959595;
+  color: var(--text-color);
 }
 
 .header-item:hover {
   cursor: pointer;
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,7 +58,7 @@
 
 .header-soc-item i {
   font-size: 25px;
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,16 +85,16 @@
   gap: 5px;
 }
 #theme-toggle {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--button-bg);
   padding: 10px;
   border: none;
   border-radius: 50px;
-  color: #959595;
+  color: var(--text-color);
 }
 
 #languages {
-  background: rgba(255, 255, 255, 0.04);
-  color: #959595;
+  background: var(--button-bg);
+  color: var(--text-color);
   border-radius: 10px;
   padding: 5px;
   border: none;
@@ -103,12 +103,12 @@
 }
 
 #languages option {
-  background: rgba(255, 255, 255, 0.04);
-  color: #959595;
+  background: var(--button-bg);
+  color: var(--text-color);
 }
 
 #languages option:hover {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--button-bg);
 }
 
 .burger-menu {
@@ -125,7 +125,7 @@
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #959595;
+  background-color: var(--text-color);
   transition: all 0.3s ease-in-out;
 }
 

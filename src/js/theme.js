@@ -1,28 +1,26 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const themeToggle = document.getElementById('theme-toggle');
-//   const themeIcon = document.getElementById('theme-icon');
-//   const body = document.body;
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
 
-//   // Перевіряємо збережену тему в localStorage
-//   const savedTheme = localStorage.getItem('theme');
-//   if (savedTheme === 'light') {
-//     body.classList.add('light-theme');
-//     themeIcon.textContent = '🌞'; // Іконка сонця
-//   } else {
-//     themeIcon.textContent = '🌙'; // Іконка місяця
-//   }
+// Перевіряємо, яка тема була збережена в localStorage
+const currentTheme = localStorage.getItem('theme');
 
-//   // Додаємо обробник подій для кнопки
-//   themeToggle.addEventListener('click', function () {
-//     body.classList.toggle('light-theme');
+if (currentTheme === 'light') {
+  body.classList.remove('dark-theme');
+  themeIcon.textContent = '🌙'; // Іконка для перемикання на темну тему
+} else {
+  body.classList.add('dark-theme');
+  themeIcon.textContent = '☀️'; // Іконка для перемикання на світлу тему
+}
 
-//     // Перевіряємо, яка тема активна, та зберігаємо її в localStorage
-//     if (body.classList.contains('light-theme')) {
-//       localStorage.setItem('theme', 'light');
-//       themeIcon.textContent = '🌞'; // Змінюємо іконку
-//     } else {
-//       localStorage.setItem('theme', 'dark');
-//       themeIcon.textContent = '🌙';
-//     }
-//   });
-// });
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+
+  if (body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeIcon.textContent = '☀️';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeIcon.textContent = '🌙';
+  }
+});

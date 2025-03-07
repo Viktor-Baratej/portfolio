@@ -11,14 +11,14 @@ export const translations = {
     title: 'Frontend Devoleper',
     about_text:
       'Hello! I am a frontend developer who is passionate about building web applications. I have knowledge of HTML, CSS, and JavaScript, as well as experience in creating React projects and TypeScript. I specialize in developing responsive layouts and strive to create user-friendly and aesthetically pleasing interfaces. I am always open to learning and looking for an opportunity to realize my potential by working on innovative products in a professional team.',
-    educ_it: 'IT School GO-IT (2024 - 2025) - FullStack Developer',
+    educ_it: '- IT School GO-IT (2024 - 2025) - FullStack Developer',
     educ_col:
-      'Svalyava Technical College of the National University of Food Technologies (2004 - 2008) - Maintenance of computer and intelligent systems and networks (Junior specialist)',
+      '- Svalyava Technical College of the National University of Food Technologies (2004 - 2008) - Maintenance of computer and intelligent systems and networks (Junior specialist)',
     educ_ter:
-      'Svalyavsky Educational and Advisory Center of the Ternopil National University of Economics (2008 - 2011) - Finance and credit (Bachelor)',
+      '- Svalyavsky Educational and Advisory Center of the Ternopil National University of Economics (2008 - 2011) - Finance and credit (Bachelor)',
     lang: 'Languages:',
     lang_ua: 'Ukrainian - Native',
-    lang_en: 'English – BeginnerEn',
+    lang_en: 'English – Beginner',
     contact: 'Contacts:',
     soft: '- Time management',
     soft1: '- Collaboration with colleagues',

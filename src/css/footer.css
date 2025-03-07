@@ -19,7 +19,7 @@
   padding-bottom: 20px;
 }
 .footer-soc-item:hover {
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,7 +28,7 @@
 }
 .footer-soc-item i {
   font-size: 25px;
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,12 +51,12 @@
 }
 .footer-address-item {
   text-align: center;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
   .footer-content {
-    margin-top: 30px;
-    gap: 70px;
+    gap: 40px;
   }
   .footer-dectop {
     display: flex;

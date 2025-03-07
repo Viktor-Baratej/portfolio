@@ -1,7 +1,7 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #959595;
+  border-bottom: var(--border-color);
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -12,6 +12,7 @@
   text-align: center;
   line-height: 1.1;
   font-size: 50px;
+  color: var(--title-color);
 }
 @keyframes slideFromTop {
   0% {
@@ -34,7 +35,7 @@
   text-align: center;
   font-size: 35px;
   font-weight: bold;
-  color: #959595;
+  color: var(--text-color);
   padding-bottom: 30px;
 }
 .hero-text {
@@ -52,8 +53,8 @@
   margin-bottom: 20px;
 }
 .hero-btn {
-  background: rgba(255, 255, 255, 0.04);
-  color: #959595;
+  background: var(--button-bg);
+  color: var(--text-color);
   border-radius: 10px;
   padding: 12px;
   font-size: 18px;
@@ -62,8 +63,8 @@
 }
 
 .hero-btn:hover {
-  color: black;
-  background: whitesmoke;
+  color: var(--button-hover-text);
+  background: var(--button-hover-bg);
 }
 
 .hero-profile {
@@ -112,7 +113,6 @@
     display: inline-block;
     font-size: 48px;
     font-weight: bold;
-    color: #ff4500;
     animation: slideFromLeft 1.5s ease-out;
   }
   .hero-description {
@@ -161,6 +161,5 @@
     animation: slideFromTop 1.5s ease-out;
     font-size: 48px;
     font-weight: bold;
-    color: #ff4500;
   }
 }

@@ -1,5 +1,5 @@
 .project-container {
-  border-bottom: 1px solid #959595;
+  border-bottom: var(--border-color);
   padding-bottom: 20px;
 }
 .project-title {
@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   border: none;
+  background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
@@ -53,8 +54,8 @@
   gap: 20px;
 }
 .project-btn {
-  background: rgba(255, 255, 255, 0.04);
-  color: #959595;
+  background: var(--button-bg);
+  color: var(--text-color);
   border-radius: 10px;
   padding: 12px;
   font-size: 18px;

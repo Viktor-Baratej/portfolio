@@ -4,7 +4,7 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  background: linear-gradient(90deg, #fa6e00 0%, #e60026 100%);
+  background: var(--title-color);
   border-radius: 50%;
   display: none;
   align-items: center;
@@ -16,7 +16,7 @@
 
 #scrollToTop i {
   font-size: 22px;
-  color: rgb(21, 21, 21);
+  color: var(--button-scroll-i);
   transition: transform 0.3s ease-in-out;
 }
 

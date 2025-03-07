@@ -1,5 +1,5 @@
 .education-container {
-  border-bottom: 1px solid #959595;
+  border-bottom: var(--border-color);
   padding: 15px;
   display: flex;
   flex-direction: column;
