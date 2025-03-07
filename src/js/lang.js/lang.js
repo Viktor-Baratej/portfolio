@@ -1,4 +1,4 @@
-import { translations } from './translations';
+import { translations } from './translations.js';
 
 function changeLanguage(lang) {
   // Оновлюємо атрибут "lang" у <html>, щоб коректно відображалась вибрана мова
