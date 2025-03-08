@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,8 +26,6 @@
   </head>
   <body>
 
-  
-       
     <!-- header -->
     <header>
       <div class="container header-content">
@@ -92,7 +91,6 @@
     </header>
     <main>
 
-
       <!-- hero -->
       <section class="Hero">
         <div class="container hero-content">
@@ -146,7 +144,6 @@
               <li class="about-me-description-item" data-lang="soft5">- Responsibility</li>
             </ul>
           </div>
-
           <h3 class="about-me-description" data-lang="tech">Tech Skills:</h3>
           <div class="about-tech-container">
             <div class="about-tech-content">
@@ -189,301 +186,233 @@
           </div>
         </div>
       </section>
-
       <!-- projects -->
-      <section id="Projects">
-        <div class="container project-container">
-          <h2 class="project-title" data-lang="project">My projects</h2>
-          <ul id="items">
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 173943.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">WebStudio</h4>
-              <p class="project-item-text" data-lang="1">
-                A website of WebStudio company. Responsive design, transform
-                effects, modal windows.
-              </p>
-              <a
-                href="https://github.com/Viktor-Baratej/goit-markup-hw-06"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://viktor-baratej.github.io/goit-markup-hw-06/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174011.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">Yachtjet</h4>
-              <p class="project-item-text" data-lang="2">
-                Website of a company engaged in the sale and rental of
-                yachts.Yachtjet single page site. Responsive design, compliance
-                with all standards. Excellent work experience.
-              </p>
-              <a
-                href="https://github.com/1ster14ka/dream-team"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://1ster14ka.github.io/dream-team/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
+     <section id="Projects">
+  <div class="container project-container">
+    <h2 class="project-title" data-lang="project">My projects</h2>
 
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174031.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">
-                Portfolio (single-page website)
-              </h4>
-              <p class="project-item-text" data-lang="3">
-                The goal of the project is to create a prototype portfolio that
-                will allow the student to easily and effectively present their
-                achievements, projects, and skills to their future employer.
-              </p>
-              <a
-                href="https://github.com/1ster14ka/js-avengers"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://1ster14ka.github.io/js-avengers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
 
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174239.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">Image Search App (JavaScript)</h4>
-              <p class="project-item-text" data-lang="4">
-                Developed an image search application in JavaScript using API.
-                Implemented asynchronous requests using fetch and processed the
-                received data. Displayed images as cards with information
-                (likes, views, comments, downloads). Added dynamic search with
-                keyword input and interactive interface. Used CSS for responsive
-                design.
-              </p>
-              <a
-                href="https://github.com/Viktor-Baratej/goit-js-hw-12"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://viktor-baratej.github.io/goit-js-hw-12/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
+        <div class="swiper-slide project-item">
+          <img class="project-img" src="./src/img/Знімок екрана 2025-03-03 173943.png" alt="WebStudio" width="50" height="50" />
+          <h4 class="project-item-title">WebStudio</h4>
+          <p class="project-item-text" data-lang="1">
+            A website of WebStudio company. Responsive design, transform effects, modal windows.
+          </p>
+          <div class="project-btn-content">
+            <a href="https://github.com/Viktor-Baratej/goit-markup-hw-06" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn"><i class="fa-brands fa-github"></i> View Code</button>
+            </a>
+            <a href="https://viktor-baratej.github.io/goit-markup-hw-06/" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn1"><i class="fa-solid fa-earth-europe"></i> Live page</button>
+            </a>
+          </div>
+        </div>
 
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174618.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">Movie Search App (React & API)</h4>
-              <p class="project-item-text" data-lang="5">
-                Developed an application for searching and viewing popular
-                movies in React using API. Implemented dynamic loading of
-                trending movies, a page with details about each movie, and
-                search by title. Used React Router for navigation between pages.
-                Added responsive design, animations, and smooth effects to
-                improve UI/UX.
-              </p>
-              <a
-                href="https://github.com/Viktor-Baratej/goit-react-hw-05"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://goit-react-hw-05-nu-beryl.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174156.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">Phonebook (React App)</h4>
-              <p class="project-item-text" data-lang="6">
-                Developed a Phonebook application in React to store contacts.
-                Used state (useState) to manage the contact list and filtering.
-                Implemented validation of input data and uniqueness of contacts.
-                Added styling using CSS and responsive design. Used local
-                storage (localStorage) to store contacts between sessions.
-              </p>
-              <a
-                href="https://github.com/Viktor-Baratej/goit-react-hw-08"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://goit-react-hw-08-eight-liart-42.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174058.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">To do list</h4>
-              <p class="project-item-text" data-lang="7">To do list manager</p>
-              <a
-                href="https://github.com/Viktor-Baratej/TODO-LIST"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
-                <a
-                  href="https://viktor-baratej.github.io/TODO-LIST/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
+        <div class="swiper-slide project-item">
+          <img class="project-img" src="./src/img/Знімок екрана 2025-03-03 174011.png" alt="Yachtjet" width="50" height="50" />
+          <h4 class="project-item-title">Yachtjet</h4>
+          <p class="project-item-text" data-lang="2">
+            Website of a company engaged in the sale and rental of yachts. Single-page site with responsive design.
+          </p>
+          <div class="project-btn-content">
+            <a href="https://github.com/1ster14ka/dream-team" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn"><i class="fa-brands fa-github"></i> View Code</button>
+            </a>
+            <a href="https://1ster14ka.github.io/dream-team/" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn1"><i class="fa-solid fa-earth-europe"></i> Live page</button>
+            </a>
+          </div>
+        </div>
 
-            <li class="project-item">
-              <img
-                class="project-img"
-                src="./src/img/Знімок екрана 2025-03-03 174111.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              <h4 class="project-item-title">HTML Table</h4>
-              <p class="project-item-text" data-lang="8">
-                Created an HTML table for structured data display
-              </p>
-              <a
-                href="https://github.com/Viktor-Baratej/Table"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="project-btn-content">
-                  <button class="project-btn" data-lang="btn">
-                    <i class="fa-brands fa-github"></i> View Code
-                  </button>
-                </a>
+        <div class="swiper-slide project-item">
+          <img class="project-img" src="./src/img/Знімок екрана 2025-03-03 174031.png" alt="Portfolio" width="50" height="50" />
+          <h4 class="project-item-title">Portfolio (single-page website)</h4>
+          <p class="project-item-text" data-lang="3">
+            A prototype portfolio that allows the student to present their achievements, projects, and skills.
+          </p>
+          <div class="project-btn-content">
+            <a href="https://github.com/1ster14ka/js-avengers" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn"><i class="fa-brands fa-github"></i> View Code</button>
+            </a>
+            <a href="https://1ster14ka.github.io/js-avengers/" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn1"><i class="fa-solid fa-earth-europe"></i> Live page</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide project-item">
+          <img class="project-img" src="./src/img/Знімок екрана 2025-03-03 174239.png" alt="Image Search App" width="50" height="50" />
+          <h4 class="project-item-title">Image Search App (JavaScript)</h4>
+          <p class="project-item-text" data-lang="4">
+            An image search application using API, fetching images dynamically and displaying them as cards.
+          </p>
+          <div class="project-btn-content">
+            <a href="https://github.com/Viktor-Baratej/goit-js-hw-12" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn"><i class="fa-brands fa-github"></i> View Code</button>
+            </a>
+            <a href="https://viktor-baratej.github.io/goit-js-hw-12/" target="_blank" rel="noopener noreferrer">
+              <button class="project-btn" data-lang="btn1"><i class="fa-solid fa-earth-europe"></i> Live page</button>
+            </a>
+          </div>
+        </div>
+<div class="swiper-slide project-item">
+                <img
+                  class="project-img"
+                  src="./src/img/Знімок екрана 2025-03-03 174618.png"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <h4 class="project-item-title">Movie Search App (React & API)</h4>
+                <p class="project-item-text" data-lang="5">
+                  Developed an application for searching and viewing popular
+                  movies in React using API. Implemented dynamic loading of
+                  trending movies, a page with details about each movie, and
+                  search by title. Used React Router for navigation between pages.
+                  Added responsive design, animations, and smooth effects to
+                  improve UI/UX.
+                </p>
                 <a
-                  href="https://viktor-baratej.github.io/Table/"
+                  href="https://github.com/Viktor-Baratej/goit-react-hw-05"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="project-btn" data-lang="btn1">
-                    <i class="fa-solid fa-earth-europe"></i> Live page
-                  </button>
-                </a>
-                </div>
-            </li>
-          </ul>
-          </section>
+                  <div class="project-btn-content">
+                    <button class="project-btn" data-lang="btn">
+                      <i class="fa-brands fa-github"></i> View Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://goit-react-hw-05-nu-beryl.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="project-btn" data-lang="btn1">
+                      <i class="fa-solid fa-earth-europe"></i> Live page
+                    </button>
+                  </a>
+                  </div>
+              </div>
+          
+           
+              <div class="swiper-slide project-item">
+                <img
+                  class="project-img"
+                  src="./src/img/Знімок екрана 2025-03-03 174156.png"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <h4 class="project-item-title">Phonebook (React App)</h4>
+                <p class="project-item-text" data-lang="6">
+                  Developed a Phonebook application in React to store contacts.
+                  Used state (useState) to manage the contact list and filtering.
+                  Implemented validation of input data and uniqueness of contacts.
+                  Added styling using CSS and responsive design. Used local
+                  storage (localStorage) to store contacts between sessions.
+                </p>
+                <a
+                  href="https://github.com/Viktor-Baratej/goit-react-hw-08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-btn-content">
+                    <button class="project-btn" data-lang="btn">
+                      <i class="fa-brands fa-github"></i> View Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://goit-react-hw-08-eight-liart-42.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="project-btn" data-lang="btn1">
+                      <i class="fa-solid fa-earth-europe"></i> Live page
+                    </button>
+                  </a>
+                  </div>
+              </div>
+         
+          
+              <div class="swiper-slide project-item">
+                <img
+                  class="project-img"
+                  src="./src/img/Знімок екрана 2025-03-03 174058.png"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <h4 class="project-item-title">To do list</h4>
+                <p class="project-item-text" data-lang="7">To do list manager</p>
+                <a
+                  href="https://github.com/Viktor-Baratej/TODO-LIST"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-btn-content">
+                    <button class="project-btn" data-lang="btn">
+                      <i class="fa-brands fa-github"></i> View Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://viktor-baratej.github.io/TODO-LIST/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="project-btn" data-lang="btn1">
+                      <i class="fa-solid fa-earth-europe"></i> Live page
+                    </button>
+                  </a>
+                  </div>
+              </div>
+           
+
+           
+              <div class="swiper-slide project-item">
+                <img
+                  class="project-img"
+                  src="./src/img/Знімок екрана 2025-03-03 174111.png"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <h4 class="project-item-title">HTML Table</h4>
+                <p class="project-item-text" data-lang="8">
+                  Created an HTML table for structured data display
+                </p>
+                <a
+                  href="https://github.com/Viktor-Baratej/Table"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-btn-content">
+                    <button class="project-btn" data-lang="btn">
+                      <i class="fa-brands fa-github"></i> View Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://viktor-baratej.github.io/Table/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="project-btn" data-lang="btn1">
+                      <i class="fa-solid fa-earth-europe"></i> Live page
+                    </button>
+                  </a>
+                  </div>
+              </div>
+              </div>
+              <!-- Кнопки навігації -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Пагінація -->
+      <div class="swiper-pagination"></div>
+      </div>
+  </div>
+</section>
 
       <!-- education -->
       <section id="Education">
@@ -568,6 +497,7 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./src/js/swiper.js"></script>
     <script type="module" src="./src/js/lang/lang.js"></script>
     <script type="module" src="./src/js/burger.js"></script>
     <script type="module" src="./src/js/scrollToTop.js"></script>

@@ -1,27 +1,118 @@
+.swiper-container {
+  width: 100%;
+  padding: 30px 0;
+  position: relative; /* Стрілки та пагінація будуть всередині */
+  margin-bottom: 30px; /* Додано більше місця для пагінації */
+}
+
+/* Вирівнювання слайдів */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 450px; /* Вирівнюємо висоту */
+}
+
+/* Стилі для кнопок навігації */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--button-bg);
+  color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Додаємо ефект при наведенні */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--button-bg);
+  color: var(--title-color);
+}
+
+/* Розмір стрілки в кнопці Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px; /* Розмір стрілки */
+  color: var(--title-color); /* Колір стрілки */
+  transition: transform 0.3s ease;
+}
+
+/* Ефект збільшення при наведенні */
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  transform: scale(1.2);
+  color: black; /* Колір при наведенні */
+}
+
+/* Виправлене позиціонування стрілок */
+.swiper-button-prev {
+  left: 15px; /* Зміщуємо в межі контейнера */
+}
+
+.swiper-button-next {
+  right: 15px; /* Зміщуємо в межі контейнера */
+}
+
+/* Оформлення кружків пагінації */
+.swiper-pagination-bullet {
+  background: var(--text-color);
+  width: 13px;
+  height: 13px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Виділення активної пагінації */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--title-color); /* Колір активного кружка */
+  transform: scale(1.2);
+}
+
+/* Адаптація для мобільних */
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    min-height: 400px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-pagination {
+    bottom: -20px;
+  }
+}
+
 .project-container {
   border-bottom: var(--border-color);
   padding-bottom: 20px;
 }
 .project-title {
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
-#items {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 .project-item {
-  padding: 13px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: none;
+  height: 300px;
   background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -29,12 +120,16 @@
 
 .project-item:hover {
   box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 .project-img {
   width: 100%;
-  object-fit: contain;
+  max-width: 350px;
+  height: auto;
+  border-radius: 5px;
   padding-bottom: 20px;
+  height: 220px;
+  object-fit: cover;
 }
 .project-item-title {
   font-size: 20px;
@@ -52,12 +147,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: auto;
 }
 .project-btn {
   background: var(--button-bg);
   color: var(--text-color);
   border-radius: 10px;
   padding: 12px;
+  padding-bottom: 20px;
   font-size: 18px;
   border: none;
   cursor: pointer;
@@ -76,17 +173,14 @@
   }
 
   .project-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 30px;
-    padding-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   #items {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .project-title {
-    padding-bottom: 40px;
   }
 }
