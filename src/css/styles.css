@@ -11,6 +11,7 @@
   --button-scroll-i: whitesmoke;
   --bg-color-project: #e5e0d8;
 }
+
 .dark-theme {
   --bg-color: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95));
   --text-color: #959595;
@@ -33,6 +34,7 @@ body {
   color: var(--text-color);
   min-width: 320px;
   overflow-x: hidden;
+  overflow-y: auto;
   line-height: 1.5;
   background: var(--bg-color);
   background-size: cover;
@@ -62,25 +64,27 @@ ul {
 }
 
 .container {
-  max-width: 320px;
   width: 100%;
+  max-width: 320px; /* Початкове значення для мобільних */
   padding: 0 15px;
+  margin: 0 auto; /* Центруємо контейнер */
+  box-sizing: border-box; /* Запобігає зайвому розширенню */
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 767px;
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1024px) {
   .container {
-    max-width: 1158px;
+    max-width: 1024px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1440px;
+    max-width: 1200px;
   }
 }

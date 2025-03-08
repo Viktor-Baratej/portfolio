@@ -1,21 +1,28 @@
 .swiper-container {
   width: 100%;
+  max-width: 1200px;
   padding: 20px 0;
   position: relative;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
 }
 
 .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  width: 100%; /* Гарантуємо, що слайд займає всю ширину */
-  max-width: 400px; /* Обмежуємо максимальну ширину */
-  min-height: 420px; /* Базовий розмір */
+  width: 100%;
+  max-width: 400px;
+  min-height: 420px;
 }
 
 .swiper-button-next,
@@ -82,22 +89,6 @@
   transform: scale(1.1);
 }
 
-/* Адаптація для мобільних */
-/* @media screen and (max-width: 768px) {
-  .swiper-slide {
-    min-height: 400px; 
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 30px;
-    height: 30px;
-  }
-
-  .swiper-pagination {
-    bottom: -20px; 
-  }
-}}*/
-
 .project-container {
   border-bottom: var(--border-color);
   padding-bottom: 20px;
@@ -119,6 +110,7 @@
   background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
+
   max-width: 360px;
   width: 100%;
   min-height: 380px;
@@ -130,11 +122,11 @@
 }
 .project-img {
   width: auto;
-  /* height: auto; */
-  height: 180px;
+  max-width: 340px;
+  height: 200px;
   border-radius: 5px;
   padding-bottom: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .project-item-title {
   font-size: 18px;
@@ -145,8 +137,8 @@
 .project-item-text {
   text-align: center;
   font-size: 14px;
-  /* margin: 0 auto; */
   padding-bottom: 20px;
+  flex-grow: 1;
 }
 
 .project-btn-content {
@@ -170,9 +162,9 @@
   color: black;
   background: whitesmoke;
 }
-
 @media screen and (max-width: 480px) {
-  .swiper-slide {
+  .swiper-slide,
+  .project-item {
     min-height: 320px;
     max-width: 280px;
     width: 100%;
@@ -187,13 +179,9 @@
   .swiper-pagination {
     bottom: -20px;
   }
-  .project-title {
-    font-size: 22px;
-  }
 
-  .project-item {
-    min-height: 320px;
-    max-width: 280px;
+  .project-img {
+    height: 180px;
   }
 
   .project-item-title {
@@ -209,15 +197,18 @@
     padding: 6px;
   }
 }
+
 @media screen and (max-width: 768px) {
   #items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .swiper-slide {
-    min-height: 360px;
-    max-width: 320px;
+
+  .swiper-slide,
+  .project-item {
+    min-height: 380px;
+    max-width: 340px;
   }
 
   .project-item {
@@ -225,6 +216,9 @@
     max-width: 320px;
   }
 
+  .project-img {
+    height: 190px;
+  }
   .project-title {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -236,9 +230,15 @@
   #items {
     grid-template-columns: repeat(3, 1fr);
   }
-  .swiper-slide {
-    min-height: 400px;
+
+  .swiper-slide,
+  .project-item {
+    min-height: 420px;
     max-width: 380px;
+  }
+
+  .project-img {
+    height: 200px;
   }
 
   .project-item {

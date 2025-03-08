@@ -1,38 +1,68 @@
-import { translations } from './translations.js';
+// import { translations } from './translations.js';
 
-function changeLanguage(lang) {
-  // Оновлюємо атрибут "lang" у <html>, щоб коректно відображалась вибрана мова
-  document.documentElement.lang = lang;
+// function changeLanguage(lang) {
+//   document.documentElement.lang = lang;
 
-  // Отримуємо всі елементи, які мають атрибут data-lang
-  document.querySelectorAll('[data-lang]').forEach(element => {
-    // Отримуємо значення data-lang, яке відповідає ключу у translations
-    const key = element.getAttribute('data-lang');
+//   document.querySelectorAll('[data-lang]').forEach(element => {
+//     const key = element.getAttribute('data-lang');
 
-    // Якщо у перекладах є відповідне значення, оновлюємо текст елемента
-    if (translations[lang][key]) {
-      element.textContent = translations[lang][key];
-    }
-  });
+//     if (translations[lang] && translations[lang][key]) {
+//       // Якщо це посилання з якорем (наприклад, href="#projects"), змінюємо тільки текст
+//       if (
+//         element.tagName === 'A' &&
+//         element.getAttribute('href').startsWith('#')
+//       ) {
+//         element.innerHTML = translations[lang][key]; // Змінюємо тільки текст
+//       } else {
+//         element.textContent = translations[lang][key];
+//       }
+//     }
+//   });
 
-  // Зберігаємо вибрану мову в localStorage, щоб вона залишалась після перезавантаження сторінки
-  localStorage.setItem('selectedLanguage', lang);
-}
+//   // Оновлюємо якірні посилання після зміни мови
+//   setTimeout(attachSmoothScrolling, 50);
 
-// Додаємо обробник події зміни мови при виборі у <select>
-document.getElementById('languages').addEventListener('change', function () {
-  // Передаємо вибране значення (this.value) у функцію changeLanguage
-  changeLanguage(this.value);
-});
+//   localStorage.setItem('selectedLanguage', lang);
+// }
 
-// Завантажуємо збережену мову при відкритті сторінки
-document.addEventListener('DOMContentLoaded', () => {
-  // Отримуємо збережену мову з localStorage або встановлюємо англійську за замовчуванням
-  const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+// // **Функція для плавного скролу**
+// function attachSmoothScrolling() {
+//   document.querySelectorAll('.nav-menu a[href^="#"]').forEach(anchor => {
+//     anchor.removeEventListener('click', smoothScrollHandler); // Видаляємо попередній обробник
+//     anchor.addEventListener('click', smoothScrollHandler); // Додаємо новий
+//   });
+// }
 
-  // Встановлюємо збережене значення в <select> для відображення вибраної мови
-  document.getElementById('languages').value = savedLanguage;
+// // **Обробник події для плавного скролу**
+// function smoothScrollHandler(event) {
+//   event.preventDefault();
+//   const targetId = this.getAttribute('href').substring(1);
+//   const targetElement = document.getElementById(targetId);
 
-  // Викликаємо функцію зміни мови, щоб оновити текст на сторінці
-  changeLanguage(savedLanguage);
-});
+//   if (targetElement) {
+//     const headerOffset = document.querySelector('header').offsetHeight; // Відступ під хедер
+//     const elementPosition =
+//       targetElement.getBoundingClientRect().top + window.scrollY;
+//     const offsetPosition = elementPosition - headerOffset - 10; // Додаємо невеликий відступ
+
+//     window.scrollTo({
+//       top: offsetPosition,
+//       behavior: 'smooth',
+//     });
+//   }
+// }
+
+// // **Коли сторінка завантажується**
+// document.addEventListener('DOMContentLoaded', () => {
+//   const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+//   document.getElementById('languages').value = savedLanguage;
+//   changeLanguage(savedLanguage);
+
+//   // Виконуємо оновлення якірних посилань після завантаження
+//   setTimeout(attachSmoothScrolling, 100);
+// });
+
+// // **Обробник зміни мови**
+// document.getElementById('languages').addEventListener('change', function () {
+//   changeLanguage(this.value);
+// });

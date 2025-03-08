@@ -2,16 +2,16 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const swiper = new Swiper('.swiper-container', {
   loop: true, // Безкінечний цикл
+  loopedSlides: 3, // Мінімізує баги при loop
   autoplay: {
-    delay: 0, // Мінімальна затримка (0 блокує стрілки)
+    delay: 2000, // Оптимальна швидкість зміни слайдів
     disableOnInteraction: false, // Продовжує рух після взаємодії
     pauseOnMouseEnter: true, // Зупиняється при наведенні мишки
-    stopOnLastSlide: false, // Продовжує рух без перерв
   },
-  speed: 4000, // Плавний перехід між слайдами (3 секунди)
-  slidesPerView: 1, // По 1 слайду на мобільних
-  spaceBetween: 20, // Відстань між слайдами
-  centeredSlides: true, // Центрування активного слайда
+  speed: 3000, // Плавний перехід між слайдами
+  slidesPerView: 1, // По замовчуванню 1 слайд
+  spaceBetween: 10,
+  centeredSlides: true, // Центрування активного слайда (тільки на мобільних)
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -20,26 +20,26 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  grabCursor: true, // Курсор "рука"
+  grabCursor: true, // UX-поліпшення (курсор у вигляді руки)
   keyboard: {
     enabled: true,
-    onlyInViewport: true, // Працює тільки якщо Swiper у вікні перегляду
+    onlyInViewport: true, // Працює тільки коли Swiper у вікні перегляду
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 15,
-      centeredSlides: true, // Центруємо на мобільних
+      spaceBetween: 10,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30, // Більше простору між слайдами на планшеті
-      centeredSlides: false, // Вирівнюємо по лівому краю
+      spaceBetween: 20,
+      centeredSlides: false,
     },
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 40, // Оптимальне розташування на десктопі
-      centeredSlides: false, // Вирівнюємо по лівому краю
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: false,
     },
   },
 });
