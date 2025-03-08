@@ -2,7 +2,7 @@
   width: 100%;
   padding: 30px 0;
   position: relative; /* Стрілки та пагінація будуть всередині */
-  margin-bottom: 30px; /* Додано більше місця для пагінації */
+  margin-bottom: 10px; /* Додано більше місця для пагінації */
 }
 
 /* Вирівнювання слайдів */
@@ -14,27 +14,30 @@
   text-align: center;
   padding: 20px;
   border-radius: 10px;
+  width: 100%; /* Гарантуємо, що слайд займає всю ширину */
   min-height: 450px; /* Вирівнюємо висоту */
 }
 
 /* Стилі для кнопок навігації */
 .swiper-button-next,
 .swiper-button-prev {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--button-bg);
   color: var(--title-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 /* Додаємо ефект при наведенні */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: var(--button-bg);
-  color: var(--title-color);
+  background: var(--title-color);
+  color: var(--bg-color);
+  transform: scale(1.1);
 }
 
 /* Розмір стрілки в кнопці Swiper */
@@ -42,7 +45,7 @@
 .swiper-button-prev::after {
   font-size: 25px; /* Розмір стрілки */
   color: var(--title-color); /* Колір стрілки */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Ефект збільшення при наведенні */
@@ -54,12 +57,21 @@
 
 /* Виправлене позиціонування стрілок */
 .swiper-button-prev {
-  left: 15px; /* Зміщуємо в межі контейнера */
+  left: 10px; /* Зміщуємо в межі контейнера */
 }
 
 .swiper-button-next {
-  right: 15px; /* Зміщуємо в межі контейнера */
+  right: 10px; /* Зміщуємо в межі контейнера */
 }
+
+/* Центруємо пагінацію
+.swiper-pagination {
+  position: absolute;
+  bottom: -25px; /* Зміщуємо трохи нижче */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+} */
 
 /* Оформлення кружків пагінації */
 .swiper-pagination-bullet {
@@ -74,23 +86,23 @@
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: var(--title-color); /* Колір активного кружка */
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 /* Адаптація для мобільних */
 @media screen and (max-width: 768px) {
   .swiper-slide {
-    min-height: 400px;
+    min-height: 400px; /* Зменшена висота */
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .swiper-pagination {
-    bottom: -20px;
+    bottom: -20px; /* Трохи вище на мобільних */
   }
 }
 
@@ -105,14 +117,13 @@
 }
 
 .project-item {
-  padding: 10px;
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: none;
-  height: 300px;
+  height: auto;
   background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -123,12 +134,10 @@
   transform: translateY(-20px);
 }
 .project-img {
-  width: 100%;
-  max-width: 350px;
+  width: auto;
   height: auto;
   border-radius: 5px;
   padding-bottom: 20px;
-  height: 220px;
   object-fit: cover;
 }
 .project-item-title {

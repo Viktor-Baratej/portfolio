@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper-container', {
   },
   loop: true, // Безкінечний цикл
   autoplay: {
-    delay: 1000, // Автоматична зміна слайдів кожні 5 секунд
+    delay: 1000, // Автоматична зміна слайдіv
     disableOnInteraction: false, // Не зупиняється після ручного прокручування
   },
   grabCursor: true, // UX-поліпшення (курсор у вигляді руки)
@@ -20,19 +20,23 @@ const swiper = new Swiper('.swiper-container', {
     onlyInViewport: true, // Працює тільки якщо Swiper у вікні перегляду
   },
   speed: 500, // Плавний перехід між слайдами
+  centeredSlides: false /* Виправляємо центрування */,
+  slidesPerView: 'auto' /* Дозволяємо автоматичне підлаштування розміру */,
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 15,
+      spaceBetween: 20,
       centeredSlides: true,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30, // Більше простору між слайдами на планшеті
+      centeredSlides: false,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 40, // Оптимальне розташування на десктопі
+      centeredSlides: false,
     },
   },
 });
