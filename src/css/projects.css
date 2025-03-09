@@ -2,8 +2,8 @@
   width: 100%;
   max-width: 1200px;
   padding: 20px 0;
-  position: relative;
   margin: 0 auto;
+  position: relative;
   overflow: hidden;
 }
 
@@ -21,8 +21,9 @@
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   min-height: 420px;
+  box-sizing: border-box;
 }
 
 .swiper-button-next,
@@ -66,14 +67,14 @@
   right: 5px;
 }
 
-/* Центруємо пагінацію
 .swiper-pagination {
   position: absolute;
-  bottom: -15px; 
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+
   z-index: 10;
-} */
+}
 
 .swiper-pagination-bullet {
   background: var(--text-color);
@@ -100,19 +101,16 @@
 }
 
 .project-item {
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: none;
-  height: auto;
   background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-
-  max-width: 360px;
   width: 100%;
+  max-width: 100%;
   min-height: 380px;
 }
 
@@ -121,12 +119,12 @@
   transform: translateY(-20px);
 }
 .project-img {
-  width: auto;
-  max-width: 340px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
   border-radius: 5px;
   padding-bottom: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .project-item-title {
   font-size: 18px;
@@ -166,8 +164,12 @@
   .swiper-slide,
   .project-item {
     min-height: 320px;
-    max-width: 280px;
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .swiper-container {
+    max-width: 100%;
+    padding: 10px 0;
   }
 
   .swiper-button-next,
@@ -208,7 +210,7 @@
   .swiper-slide,
   .project-item {
     min-height: 380px;
-    max-width: 340px;
+    max-width: 48%;
   }
 
   .project-item {
@@ -234,7 +236,7 @@
   .swiper-slide,
   .project-item {
     min-height: 420px;
-    max-width: 380px;
+    max-width: 32%;
   }
 
   .project-img {

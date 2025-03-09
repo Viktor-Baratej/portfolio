@@ -2,33 +2,47 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const swiper = new Swiper('.swiper-container', {
   loop: true, // Безкінечний цикл
-  loopedSlides: 3, // Мінімізує баги при loop
+  loopedSlides: 3, // Запобігає багам у циклічному режимі
   autoplay: {
-    delay: 2000, // Оптимальна швидкість зміни слайдів
-    disableOnInteraction: false, // Продовжує рух після взаємодії
-    pauseOnMouseEnter: true, // Зупиняється при наведенні мишки
+    delay: 1000, // Оптимальна пауза між слайдами
+    disableOnInteraction: false, // Авто-прокрутка не зупиняється після взаємодії
+    pauseOnMouseEnter: true, // Авто-прокрутка зупиняється при наведенні миші
   },
-  speed: 3000, // Плавний перехід між слайдами
-  slidesPerView: 1, // По замовчуванню 1 слайд
-  spaceBetween: 10,
-  centeredSlides: true, // Центрування активного слайда (тільки на мобільних)
+  speed: 1500, // Плавна анімація
+  slidesPerView: 1, // За замовчуванням 1 слайд
+  spaceBetween: 20, // Відстань між слайдами
+  centeredSlides: false, // Центруємо лише на мобільних
+  observer: true, // Відслідковує зміни у DOM
+  observeParents: true, // Відслідковує зміни у батьківських елементах
+
+  // 🔥 Підключаємо стрілки
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  // 🔥 Підключаємо пагінацію
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true, // Робить пагінацію адаптивнішою
   },
-  grabCursor: true, // UX-поліпшення (курсор у вигляді руки)
+
+  grabCursor: true, // UX-поліпшення (курсор "рука")
   keyboard: {
     enabled: true,
-    onlyInViewport: true, // Працює тільки коли Swiper у вікні перегляду
+    onlyInViewport: true, // Лише коли Swiper у полі зору
   },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
+      centeredSlides: true,
+    },
+    480: {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
       centeredSlides: true,
     },
     768: {
@@ -37,9 +51,13 @@ const swiper = new Swiper('.swiper-container', {
       centeredSlides: false,
     },
     1024: {
-      slidesPerView: 'auto',
+      slidesPerView: 3,
       spaceBetween: 30,
       centeredSlides: false,
+    },
+    1440: {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
     },
   },
 });

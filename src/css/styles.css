@@ -65,10 +65,23 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 320px; /* Початкове значення для мобільних */
+  max-width: 360px;
+  min-width: 320px;
   padding: 0 15px;
-  margin: 0 auto; /* Центруємо контейнер */
+  margin: 0 auto;
   box-sizing: border-box; /* Запобігає зайвому розширенню */
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
 }
 
 @media screen and (min-width: 768px) {
