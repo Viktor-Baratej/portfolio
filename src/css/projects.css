@@ -53,10 +53,10 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.swiper-button-next:hover::after,
-.swiper-button-prev:hover::after {
+.swiper-button-next:hover:active,
+.swiper-button-prev:hover:active {
   transform: scale(1.2);
-  color: black;
+  background: var(--button-bg);
 }
 
 .swiper-button-prev {
