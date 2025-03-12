@@ -2,7 +2,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const swiper = new Swiper('.swiper-container', {
   loop: true, // Безкінечний цикл
-  loopedSlides: 3, // Запобігає багам у циклічному режимі
+  loopAdditionalSlides: 3, // Додає додаткові слайди для плавного циклу
   autoplay: {
     delay: 1000, // Оптимальна пауза між слайдами
     disableOnInteraction: false, // Авто-прокрутка не зупиняється після взаємодії
@@ -15,13 +15,11 @@ const swiper = new Swiper('.swiper-container', {
   observer: true, // Відслідковує зміни у DOM
   observeParents: true, // Відслідковує зміни у батьківських елементах
 
-  // 🔥 Підключаємо стрілки
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // 🔥 Підключаємо пагінацію
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -41,7 +39,7 @@ const swiper = new Swiper('.swiper-container', {
       centeredSlides: true,
     },
     480: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
       spaceBetween: 15,
       centeredSlides: true,
     },
@@ -55,9 +53,9 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       centeredSlides: false,
     },
-    1440: {
-      slidesPerView: 'auto',
-      spaceBetween: 40,
-    },
+    // 1440: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 40,
+    // },
   },
 });
