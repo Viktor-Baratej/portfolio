@@ -92,6 +92,10 @@
   color: var(--text-color);
 }
 
+#theme-icon {
+  font-size: 18px;
+}
+
 #languages {
   background: var(--button-bg);
   color: var(--text-color);
