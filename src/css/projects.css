@@ -16,14 +16,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 100%;
-  min-height: 420px;
+  height: auto !important;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .swiper-button-next,
@@ -103,14 +103,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   border: none;
   background-color: var(--bg-color-project);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 100%;
-  min-height: 380px;
+  height: 100%;
+  flex-grow: 1;
 }
 
 .project-item:hover {
@@ -123,19 +123,22 @@
   height: 200px;
   border-radius: 5px;
   padding-bottom: 20px;
-  object-fit: contain;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .project-item-title {
   font-size: 18px;
   text-align: center;
   text-decoration: underline;
   padding-bottom: 8px;
+  flex-shrink: 0;
 }
 .project-item-text {
   text-align: center;
   font-size: 14px;
   padding-bottom: 20px;
   flex-grow: 1;
+  min-height: auto;
 }
 
 .project-btn-content {
@@ -150,7 +153,7 @@
   border-radius: 10px;
   padding: 12px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   cursor: pointer;
 }
@@ -158,16 +161,18 @@
 .project-btn:hover {
   color: black;
   background: whitesmoke;
+  outline: none;
+  border: 1px solid var(--title-solid-color);
+  box-shadow: 0px 0px 7px var(--title-solid-color);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 @media screen and (max-width: 480px) {
   .swiper-slide,
   .project-item {
     min-height: 320px;
-    max-width: 100%;
   }
 
   .swiper-container {
-    max-width: 100%;
     padding: 10px 0;
   }
 
@@ -192,11 +197,6 @@
   .project-item-text {
     font-size: 13px;
   }
-
-  .project-btn {
-    font-size: 12px;
-    padding: 6px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -209,12 +209,6 @@
   .swiper-slide,
   .project-item {
     min-height: 380px;
-    max-width: 48%;
-  }
-
-  .project-item {
-    min-height: 350px;
-    max-width: 320px;
   }
 
   .project-img {
@@ -235,15 +229,9 @@
   .swiper-slide,
   .project-item {
     min-height: 420px;
-    max-width: 32%;
   }
 
   .project-img {
     height: 200px;
-  }
-
-  .project-item {
-    min-height: 420px;
-    max-width: 380px;
   }
 }

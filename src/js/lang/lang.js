@@ -7,6 +7,14 @@ function changeLanguage(lang) {
     const key = element.getAttribute('data-lang');
 
     if (translations[lang] && translations[lang][key]) {
+      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+        element.placeholder = translations[lang][key]; // Оновлюємо placeholder
+      } else {
+        element.textContent = translations[lang][key];
+      }
+    }
+
+    if (translations[lang] && translations[lang][key]) {
       // Якщо це посилання з якорем (наприклад, href="#projects"), змінюємо тільки текст
       if (
         element.tagName === 'A' &&

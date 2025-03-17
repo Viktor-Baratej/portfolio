@@ -10,6 +10,7 @@
   --button-hover-text: #545252;
   --button-scroll-i: whitesmoke;
   --bg-color-project: #e5e0d8;
+  --title-solid-color: #cc5d3d;
 }
 
 .dark-theme {
@@ -27,6 +28,7 @@
     rgba(18, 18, 18, 0.95),
     rgba(18, 18, 18, 0.95)
   );
+  --title-solid-color: #cc5d3d;
 }
 
 body {

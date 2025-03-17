@@ -12,6 +12,11 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
     "validator": "^13.12.0"
   },
   "main": "vite.config.js",
@@ -25,5 +30,6 @@
     "url": "https://github.com/Viktor-Baratej/My-personal-page/issues"
   },
   "homepage": "https://github.com/Viktor-Baratej/My-personal-page#readme",
+  "keywords": [],
   "description": ""
 }

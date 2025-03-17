@@ -36,12 +36,12 @@ const swiper = new Swiper('.swiper-container', {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
-      centeredSlides: true,
+      centeredSlides: false,
     },
     480: {
       slidesPerView: 1,
       spaceBetween: 15,
-      centeredSlides: true,
+      centeredSlides: false,
     },
     768: {
       slidesPerView: 2,
