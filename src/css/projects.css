@@ -24,6 +24,7 @@
   height: auto !important;
   box-sizing: border-box;
   flex-grow: 1;
+  margin-bottom: 20px;
 }
 
 .swiper-button-next,
@@ -77,8 +78,8 @@
 
 .swiper-pagination-bullet {
   background: var(--text-color);
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   opacity: 0.6;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -209,6 +210,11 @@
   .swiper-slide,
   .project-item {
     min-height: 380px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 
   .project-img {
