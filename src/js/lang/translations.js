@@ -46,6 +46,8 @@ export const translations = {
     pl2: 'Enter your email',
     pl3: 'Enter your message',
     formbtn: 'Send message',
+    weathertext:
+      'Weather Widget is an interactive web application that provides up-to-date weather information for any city in the world. The widget allows users to easily search for weather by city name, view current weather conditions, and check the forecast for the next 5-7 days in a convenient and stylish format.',
   },
 
   ua: {
@@ -95,5 +97,7 @@ export const translations = {
     pl2: 'Введи свою ел.пошту',
     pl3: 'Введи повідомлення',
     formbtn: 'Відправити повідомлення',
+    weathertext:
+      'Weather Widget – це інтерактивний веб-додаток, який надає актуальну інформацію про погоду в будь-якому місті світу. Віджет дозволяє користувачеві легко шукати погоду за назвою міста, переглядати поточні погодні умови та прогноз на 5-7 днів вперед у зручному та стильному форматі.',
   },
 };
