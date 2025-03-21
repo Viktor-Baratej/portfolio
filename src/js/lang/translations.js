@@ -8,7 +8,7 @@ export const translations = {
     name: 'Viktor Baratej',
     you: "Hello! I'm Viktor, I build interactive and stylish interfaces that captivate from the first click.",
     tbn: 'Download CV',
-    title: 'Frontend Devoleper',
+    title: 'Frontend Developer',
     about1:
       'I am a Front-End Developer passionate about creating fast, adaptive, and user-friendly web applications.',
     about2:
