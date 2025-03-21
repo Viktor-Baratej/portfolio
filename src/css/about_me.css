@@ -15,18 +15,59 @@
   font-size: 30px;
   padding-bottom: 15px;
 }
+
+.about-subtitle {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.about-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.about-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.about-list li::before {
+  content: '✔️';
+  margin-right: 10px;
+
+  font-size: 20px;
+}
+.about-call-to-action {
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+}
+.about-contact {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .about-me-text {
   max-width: 100%;
   width: 100%;
   text-align: justify;
-  padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
+  letter-spacing: 0.8px;
 }
 .about-me-description {
   text-align: center;
   font-size: 25px;
   padding-bottom: 15px;
+  margin-top: 20px;
 }
 
 .about-soft-content,
@@ -34,8 +75,6 @@
   margin-bottom: 0px;
 }
 
-.about-me-description-list {
-}
 .about-me-description-item {
   font-size: 20px;
   line-height: 1.5;
@@ -49,6 +88,7 @@
   text-decoration-thickness: 2px;
   padding-bottom: 10px;
   font-size: 20px;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -72,6 +112,11 @@
   .about-me-description-list {
     text-align: center;
   }
+  .about-call-to-action,
+  .about-contact {
+    margin-top: 25px;
+    text-align: justify;
+  }
 
   .about-tech-container {
     display: flex;
@@ -86,12 +131,20 @@
 
   .about-me-text {
     width: 80%;
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
   }
 
   .about-me-description {
     padding-bottom: 15px;
+  }
+
+  .about-call-to-action,
+  .about-contact {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: justify;
   }
 
   .about-tech-container {

@@ -23,8 +23,9 @@ p {
 .education-item {
 }
 .education-text {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 auto;
+  text-align: justify;
 }
 .education-lang {
   text-align: center;

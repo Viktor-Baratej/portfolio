@@ -9,8 +9,31 @@ export const translations = {
     you: "Hello! I'm Viktor, I build interactive and stylish interfaces that captivate from the first click.",
     tbn: 'Download CV',
     title: 'Frontend Devoleper',
-    about_text:
-      'Hello! I am a frontend developer who is passionate about building web applications. I have knowledge of HTML, CSS, and JavaScript, as well as experience in creating React projects and TypeScript. I specialize in developing responsive layouts and strive to create user-friendly and aesthetically pleasing interfaces. I am always open to learning and looking for an opportunity to realize my potential by working on innovative products in a professional team.',
+    about1:
+      'I am a Front-End Developer passionate about creating fast, adaptive, and user-friendly web applications.',
+    about2:
+      'I have experience working with HTML, CSS, JavaScript, and React, specializing in developing interactive and visually appealing interfaces that enhance user experience and contribute to business growth. My goal is to help companies strengthen their digital presence by creating modern, efficient, and accessible web solutions.',
+    about3: 'How Can I Contribute to Your Project?',
+    about4: 'Responsive and cross-browser development (HTML, CSS)',
+    about5:
+      'Development of intuitive and high-performance interfaces (JavaScript, React)',
+    about6: 'Optimization of website speed and performance',
+    about7: 'API integration and data management (REST API, Fetch, Axios)',
+    about8: 'Dynamic animations and UX enhancements',
+    about9: 'Technologies and Tools I Work With:',
+    about10: 'Frameworks & Libraries: React (Hooks, Context API, React Router)',
+    about11: 'Development Tools: Vite, Git, GitHub',
+    about12: 'Deployment & Hosting: Vercel, Render',
+    about13: 'Project Management Systems: Jira, Trello, Slack',
+    about14: 'Why Work With Me?',
+    about15: 'I always meet deadlines and project requirements',
+    about16: 'Open to new ideas and flexible in communication',
+    about17:
+      'Focused on attention to detail and delivering high-quality results',
+    about18:
+      'If you are looking for a reliable front-end developer to help you build a modern and user-friendly web application, let’s connect and discuss your project!',
+    about19: 'I’d be happy to bring your idea to life!',
+
     educ_it: '- IT School GO-IT (2024 - 2025) - FullStack Developer',
     educ_col:
       '- Svalyava Technical College of the National University of Food Technologies (2004 - 2008) - Maintenance of computer and intelligent systems and networks (Junior specialist)',
@@ -60,8 +83,32 @@ export const translations = {
     you: 'Привіт! Я Віктор, створюю інтерактивні та стильні інтерфейси, які захоплюють з першого кліку.',
     tbn: 'Завантажити CV',
     title: 'Frontend Розробник',
-    about_text:
-      'Привіт! Я фронтенд-розробник, який захоплюється створенням веб-застосунків. Я маю знання HTML, CSS і JavaScript, а також досвід створення проєктів на React і TypeScript. Спеціалізуюся на розробці адаптивних макетів і прагну створювати зручні та естетично привабливі інтерфейси. Завжди відкритий до навчання та шукаю можливості реалізувати свій потенціал, працюючи над інноваційними продуктами у професійній команді.',
+    about1:
+      'Я Front-End розробник, який захоплюється створенням швидких, адаптивних і зручних веб-додатків.',
+    about2:
+      'Маю досвід роботи з HTML, CSS, JavaScript і React, спеціалізуюсь на розробці інтерактивних та візуально привабливих інтерфейсів, що покращують користувацький досвід і сприяють розвитку бізнесу. Моя мета — допомогти компаніям посилити свою цифрову присутність, створюючи сучасні, ефективні та доступні веб-рішення.',
+    about3: 'Як я можу долучитися до вашого проєкту?',
+    about4: 'Адаптивна та кросбраузерна розробка (HTML, CSS)',
+    about5:
+      'Розробка інтуїтивно зрозумілих та високопродуктивних інтерфейсів (JavaScript, React)',
+    about6: 'Оптимізація швидкості та продуктивності сайту',
+    about7: 'Інтеграція API та управління даними (REST API, Fetch, Axios)',
+    about8: 'Динамічні анімації та покращення UX',
+    about9: 'Технології та інструменти, з якими я працюю:',
+    about10:
+      'Фреймворки та бібліотеки: React (Hooks, Context API, React Router)',
+    about11: 'Інструменти розробки: Vite, Git, GitHub',
+    about12: 'Розгортання та хостинг: Vercel, Render',
+    about13: 'Системи управління проєктами: Jira, Trello, Slack',
+    about14: 'Чому варто працювати зі мною?',
+    about15: 'Завжди дотримуюся дедлайнів та вимог проєкту',
+    about16: 'Відкритий до нових ідей та гнучкий у спілкуванні',
+    about17:
+      'Орієнтований на увагу до деталей та отримання якісного результату',
+    about18:
+      'Якщо ви шукаєте надійного front-end розробника, який допоможе вам створити сучасний та зручний веб-додаток, давайте зв’яжемося та обговоримо ваш проєкт!',
+    about19: 'Буду радий втілити вашу ідею в життя!',
+
     educ_it: 'IT школа GO-IT (2024 - 2025) - FullStack розробник',
     educ_col:
       "- Свалявський технічний коледж Національного університету харчових технологій (2004 - 2008) – Обслуговування комп'ютерних та інтелектуальних систем і мереж (Молодший спеціаліст)",

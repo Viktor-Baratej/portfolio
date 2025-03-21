@@ -136,7 +136,7 @@ header {
 .burger-menu {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -207,7 +207,7 @@ header {
 
   .header-list a {
     color: #959595;
-    font-size: 22px;
+    font-size: 30px;
     text-decoration: none;
     transition: color 0.3s ease;
   }
