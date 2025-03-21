@@ -52,8 +52,12 @@ header {
 
 .header-list {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   color: var(--text-color);
+}
+
+.header-item {
+  font-size: 20px;
 }
 
 .header-item:hover {
@@ -205,12 +209,6 @@ header {
     gap: 25px;
   }
 
-  .header-list a {
-    color: #959595;
-    font-size: 30px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
   /* Запобігає проблемі Safari з `position: fixed` */
   .no-scroll {
     position: fixed;
