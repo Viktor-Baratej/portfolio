@@ -1,0 +1,107 @@
+:root {
+  --bg-color: #f5ede3;
+  --text-color: #4a4a4a;
+  --border-color: 1px solid #959595;
+  --title-color: #cc5d3d;
+  --paragraph-color: #6b6762;
+  --button-bg: #c3b8ab;
+  --button-text: #545252;
+  --button-hover-bg: whitesmoke;
+  --button-hover-text: #545252;
+  --button-scroll-i: whitesmoke;
+  --bg-color-project: #e5e0d8;
+  --title-solid-color: #cc5d3d;
+}
+
+.dark-theme {
+  --bg-color: linear-gradient(rgba(18, 18, 18, 0.95), rgba(18, 18, 18, 0.95));
+  --text-color: #959595;
+  --border-color: 1px solid #959595;
+  --title-color: linear-gradient(90deg, #fa6e00, #e60026);
+  --paragraph-color: #959595;
+  --button-bg: rgba(255, 255, 255, 0.04);
+  --button-text: #959595;
+  --button-hover-bg: whitesmoke;
+  --button-hover-text: black;
+  --button-scroll-i: rgb(21, 21, 21);
+  --bg-color-project: linear-gradient(
+    rgba(18, 18, 18, 0.95),
+    rgba(18, 18, 18, 0.95)
+  );
+  --title-solid-color: #cc5d3d;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  min-width: 320px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  line-height: 1.5;
+  background: var(--bg-color);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  background: var(--title-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--title-color);
+  text-decoration-thickness: 2px;
+}
+
+p,
+ul {
+  
+  color: #959595;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

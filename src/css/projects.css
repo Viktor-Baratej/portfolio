@@ -1,0 +1,243 @@
+.swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto !important;
+  box-sizing: border-box;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--button-bg);
+  color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--title-color);
+  color: var(--bg-color);
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  color: var(--title-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.swiper-button-next:hover:active,
+.swiper-button-prev:hover:active {
+  transform: scale(1.2);
+  background: var(--button-bg);
+}
+
+.swiper-button-prev {
+  left: 5px;
+}
+
+.swiper-button-next {
+  right: 5px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: var(--text-color);
+  width: 13px;
+  height: 13px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--title-color);
+  transform: scale(1.1);
+}
+
+.project-container {
+  border-bottom: var(--border-color);
+  padding-bottom: 20px;
+}
+.project-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border: none;
+  background-color: var(--bg-color-project);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.project-item:hover {
+  box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.3);
+  transform: translateY(-20px);
+}
+.project-img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.project-item-title {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 8px;
+  flex-shrink: 0;
+}
+.project-item-text {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+  min-height: auto;
+}
+
+.project-btn-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+}
+.project-btn {
+  background: var(--button-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 12px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  color: black;
+  background: whitesmoke;
+  outline: none;
+  border: 1px solid var(--title-solid-color);
+  box-shadow: 0px 0px 7px var(--title-solid-color);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+@media screen and (max-width: 480px) {
+  .swiper-slide,
+  .project-item {
+    min-height: 320px;
+  }
+
+  .swiper-container {
+    padding: 10px 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper-pagination {
+    bottom: -20px;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+
+  .project-item-title {
+    font-size: 16px;
+  }
+
+  .project-item-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .swiper-slide,
+  .project-item {
+    min-height: 380px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .project-img {
+    height: 190px;
+  }
+  .project-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .swiper-slide,
+  .project-item {
+    min-height: 420px;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+}
