@@ -70,5 +70,6 @@
   .footer-address-list {
     display: flex;
     flex-direction: row;
+    gap: 30px;
   }
 }

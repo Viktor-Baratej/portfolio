@@ -11,9 +11,8 @@
   padding-bottom: 30px;
   text-align: center;
   line-height: 1.1;
-  font-size: 50px;
+  font-size: 40px;
   color: var(--title-color);
-  font-size: 48px;
   font-weight: bold;
   animation: slideFromTop 2s ease-out;
 }
@@ -41,12 +40,12 @@
   padding-bottom: 30px;
 }
 .hero-text {
-  text-align: justify;
+  width: 100%;
+  text-align:inherit;
   font-size: 20px;
   padding-bottom: 20px;
   line-height: 1.5;
-  max-width: 70%;
-  margin: 0 auto;
+
 }
 
 .hero-btn-content {
@@ -101,9 +100,8 @@
   }
 
   .hero-title {
-    display: inline-block;
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 42px;
+  
   }
 
   .hero-description {
@@ -123,8 +121,9 @@
   }
 
   .hero-title {
-    display: block;
+    
     width: 100%;
+   
     text-align: center;
   }
 

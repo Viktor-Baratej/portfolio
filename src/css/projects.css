@@ -144,17 +144,16 @@
 
 .project-btn-content {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: auto;
+  justify-content: space-between;
+
 }
 .project-btn {
   background: var(--button-bg);
   color: var(--text-color);
   border-radius: 10px;
-  padding: 12px;
-  padding-bottom: 20px;
-  font-size: 15px;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }
@@ -199,6 +198,7 @@
   .project-item-text {
     font-size: 13px;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -226,6 +226,7 @@
     padding-bottom: 20px;
     font-size: 30px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {

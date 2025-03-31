@@ -24,8 +24,8 @@ p {
 }
 .education-text {
   font-size: 18px;
-  margin: 0 auto;
-  text-align: justify;
+ width: 100%;
+  text-align: inherit;
 }
 .education-lang {
   text-align: center;

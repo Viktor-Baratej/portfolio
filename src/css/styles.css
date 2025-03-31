@@ -58,7 +58,6 @@ h3 {
   background: var(--title-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: underline;
   text-decoration-color: var(--title-color);
   text-decoration-thickness: 2px;
 }

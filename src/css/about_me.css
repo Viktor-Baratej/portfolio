@@ -8,7 +8,6 @@
   background: linear-gradient(90deg, var (--title-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: underline;
   text-decoration-color: #fa6e00;
   text-decoration-thickness: 2px;
   text-align: center;
@@ -27,7 +26,7 @@
 .about-list {
   text-align: left;
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0 auto;
   max-width: 700px;
 }
@@ -39,25 +38,27 @@
   align-items: center;
 }
 .about-list li::before {
-  content: '✔️';
+  content: '✓';
+  color: var(--title-solid-color);
   margin-right: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .about-call-to-action {
+  width: 100%;
   font-size: 18px;
   margin-top: 30px;
-  text-align: center;
+  text-align: inherit;
 }
 .about-contact {
   font-size: 18px;
-  text-align: center;
+  text-align: inherit;
   margin-bottom: 40px;
 }
 
 .about-me-text {
-  max-width: 100%;
   width: 100%;
-  text-align: justify;
+  text-align:inherit;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.8px;
@@ -69,10 +70,7 @@
   margin-top: 20px;
 }
 
-.about-soft-content,
-.about-tech-content {
-  margin-bottom: 0px;
-}
+
 
 .about-me-description-item {
   font-size: 20px;
@@ -192,8 +190,8 @@
 
   .about-call-to-action,
   .about-contact {
-    margin-top: 25px;
-    text-align: justify;
+    margin-top: 15px;
+   
   }
 
   .about-tech-container {
