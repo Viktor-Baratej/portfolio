@@ -26,13 +26,11 @@
 .about-list {
   text-align: left;
   list-style: none;
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 700px;
+  padding: 12px;
 }
 .about-list li {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 0.9;
   padding: 8px 0;
   display: flex;
   align-items: center;
@@ -70,6 +68,25 @@
   margin-top: 20px;
 }
 
+.about-me-description-list {
+  text-align: left;
+  list-style: none;
+  padding: 12px;
+}
+.about-me-description-list li {
+  font-size: 14px;
+  line-height: 0.9;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.about-me-description-list li::before {
+  content: '✓';
+  color: var(--title-solid-color);
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
 .about-me-description-item {
@@ -83,16 +100,15 @@
   text-decoration: underline;
   text-decoration-color: #fa6e00;
   text-decoration-thickness: 2px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 16px;
+ 
 }
 
 .accordion {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .accordion-item {
