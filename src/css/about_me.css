@@ -30,7 +30,7 @@
 }
 .about-list li {
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.1;
   padding: 8px 0;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@
 }
 .about-me-description-list li {
   font-size: 14px;
-  line-height: 0.9;
+  line-height: 1.1;
   padding: 8px 0;
   display: flex;
   align-items: center;
@@ -100,7 +100,8 @@
   text-decoration: underline;
   text-decoration-color: #fa6e00;
   text-decoration-thickness: 2px;
-  font-size: 16px;
+  margin-top: 12px;
+  text-align: center;
  
 }
 
@@ -271,9 +272,8 @@
   }
 
   .about-me-description-2 {
-    padding-bottom: 10px;
     font-size: 18px;
-    text-align: center;
+    
   }
   .accordion-icon {
     width: 22px;
