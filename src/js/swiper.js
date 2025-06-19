@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false, // Авто-прокрутка не зупиняється після взаємодії
     pauseOnMouseEnter: true, // Авто-прокрутка зупиняється при наведенні миші
   },
+  
   speed: 1200, // Плавна анімація
   slidesPerView: 1, // За замовчуванням 1 слайд
   spaceBetween: 20, // Відстань між слайдами
