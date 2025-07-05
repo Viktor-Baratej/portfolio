@@ -2,7 +2,7 @@ export const translations = {
   en: {
     logo: 'VB',
     about: 'About me',
-    project: 'My projects',
+    projects: 'My projects',
     education: 'Education',
     contacts: 'Contacts',
     name: 'Viktor Baratej',
@@ -53,6 +53,7 @@ export const translations = {
     tech: 'Tech Skills:',
     btn: 'GitHub Code',
     btn1: 'Live Preview',
+    11: 'NeoGallery is a modern NFT marketplace-style landing page for showcasing rare digital art. Built with HTML5 and CSS3 as a personal portfolio project.',
     10: 'Explore Indonesia is a responsive landing page for a travel service, built with React + Vite. It features scroll effects, YouTube video integration, a burger menu gallery sections, and modern animations. The project is fully adapted for mobile and desktop devices   anddeployed on Vercel. Technologies: React, Vite, CSS Modules, Flexbox & CSS Grid, Swiper.js, Font Awesome YouTube Embed, Parallax Scroll.',
     0: 'This is a website created based on a ready-made Figma design. The project was developed with a focus on clean code, visual appeal, and user experience.The website includes:a modern user interface,a pricing section with a monthly/yearly toggle switch,interactive customer testimonials,a partner logos section,a stylized CTA area with a messenger contact button.Technologies used:HTML5, CSS3 (Flexbox/Grid), basic animations.',
     1: 'Developed a fully responsive website for the design studio WebStudio using HTML and CSS. Implemented hover effects, animations, and modal windows. The design follows the mobile-first approach and adheres to modern web standards. Ensured cross-browser compatibility and fast loading performance.',
@@ -80,7 +81,7 @@ export const translations = {
   ua: {
     logo: 'ВБ',
     about: 'Про мене',
-    project: 'Мої проєкти',
+    projects: 'Мої Проєкти',
     education: 'Освіта',
     contacts: 'Контакти',
     name: 'Віктор Баратей',
@@ -132,6 +133,7 @@ export const translations = {
     tech: 'Технічні навички:',
     btn: 'Репозиторій',
     btn1: 'Демо-версія',
+     11: 'NeoGallery — це сучасна цільова сторінка в стилі NFT-маркетплейсу для демонстрації рідкісного цифрового мистецтва. Розроблена за допомогою HTML5 та CSS3 як особистий портфоліо-проект.',
     10: 'Explore Indonesia — адаптивна лендинг-сторінка для туристичного сервісу, створена на базі React + Vite.Реалізовано ефекти прокрутки, інтеграцію відео з YouTube, бургер-меню, секції з галереєю та сучасну анімацію.Проєкт повністю адаптований під мобільні пристрої та десктоп і задеплоєний на Vercel.Технології: React, Vite, CSS Modules, Flexbox & CSS Grid, Swiper.js, Font Awesome, YouTube Embed, Parallax Scroll.',
     0: 'Це вебсайт, створений на основі готового дизайну з Figma. Проєкт розроблений з акцентом на чистий код, візуальну привабливість та зручність для користувача.Сайт включає:сучасний інтерфейс,секцію з тарифами та перемикачем місячної/річної оплати,інтерактивні відгуки клієнтів,секцію з логотипами партнерів,стилізовану CTA-зону з кнопкою для зв’язку через месенджер.Використані технології:HTML5, CSS3 (Flexbox/Grid), базова анімація.',
     1: 'Створено адаптивний вебсайт для дизайн-студії WebStudio з використанням HTML та CSS. Реалізовано ефекти при наведенні, анімації та модальні вікна. Дизайн побудований за принципом mobile-first і відповідає сучасним стандартам верстки. Забезпечено кросбраузерність і високу швидкість завантаження.',
