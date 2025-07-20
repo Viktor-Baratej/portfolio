@@ -5,10 +5,11 @@
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+
     <title>PORTFOLIO</title>
 
     
-
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Swiper styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -140,7 +141,7 @@
       </section>
 
       <!-- about me -->
-      <section id="about-me">
+      <section id="about-me" data-aos="fade-up" data-aos-duration="2000">
         <div class="container about-me-container">
           <h2 class="about-me-title" data-lang="about">About me</h2>
           <p class="about-me-text" data-lang="about1">
@@ -272,7 +273,7 @@
       </section>
       
       <!-- projects -->
-      <section id="projects">
+      <section id="projects" data-aos="fade-up" data-aos-duration="1000">
         <div class="container project-container">
           <h2 class="project-title" data-lang="project">My projects</h2>
       
@@ -482,7 +483,7 @@
       
 
       <!-- education -->
-      <section id="education">
+      <section id="education" data-aos="fade-up" data-aos-duration="1000">
         <div class="container education-container">
           <div class="education-content">
             <h2 class="education-title" data-lang="education">Education:</h2>
@@ -518,7 +519,7 @@
         <i class="fa-solid fa-circle-arrow-up"></i>
       </button>
 
-      <section>
+      <section data-aos="fade-up" data-aos-duration="1000">
         <form id="contactForm" class="container form-container">
           <div class="form-content">
             <h3 class="form-title" data-lang="formt">Send me a message</h3>
@@ -539,7 +540,7 @@
     </main>
 
     <!-- footer -->
-    <footer id="contacts">
+    <footer id="contacts" data-aos="fade-up" data-aos-duration="1000">
       <div class="container footer-content">
         <h2 class="footer-title" data-lang="contact">Contacts:</h2>
         <div class="footer-dectop">
@@ -598,6 +599,10 @@
     src="https://kit.fontawesome.com/549946b405.js"
     crossorigin="anonymous"
   ></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
   </body>
 </html>
