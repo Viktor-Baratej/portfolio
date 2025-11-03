@@ -53,6 +53,7 @@ export const translations = {
     tech: 'Tech Skills:',
     btn: 'GitHub Code',
     btn1: 'Live Preview',
+    12: 'GENIUS is a landing page for a training course, created using a Figma layout. The project is implemented with a modern design, with an emphasis on calls to action (CTAs) and a clear content structure. JavaScript is used for page dynamics — a timer, smooth scrolling, and price changes depending on the selected tariff are implemented. The project is implemented without third-party frameworks — only pure HTML, CSS, and JavaScript.',
     11: 'NeoGallery is a modern NFT marketplace-style landing page for showcasing rare digital art. Built with HTML5 and CSS3 as a personal portfolio project.',
     10: 'Explore Indonesia is a responsive landing page for a travel service, built with React + Vite. It features scroll effects, YouTube video integration, a burger menu gallery sections, and modern animations. The project is fully adapted for mobile and desktop devices   anddeployed on Vercel. Technologies: React, Vite, CSS Modules, Flexbox & CSS Grid, Swiper.js, Font Awesome YouTube Embed, Parallax Scroll.',
     0: 'This is a website created based on a ready-made Figma design. The project was developed with a focus on clean code, visual appeal, and user experience.The website includes:a modern user interface,a pricing section with a monthly/yearly toggle switch,interactive customer testimonials,a partner logos section,a stylized CTA area with a messenger contact button.Technologies used:HTML5, CSS3 (Flexbox/Grid), basic animations.',
@@ -64,8 +65,7 @@ export const translations = {
     6: 'Developed an application for browsing and searching popular movies using React and a public API. Implemented dynamic loading of trending movies, a detail page for each movie, and search by title. Integrated React Router for navigation between pages. Added responsive design, animations, and smooth effects to enhance user experience.',
     7: 'Built a phonebook application with contact management and user authentication using React. Implemented user registration and login, storing contacts on a backend server. Added features for searching contacts and deleting entries, with form validation for inputs.',
     8: 'Developed a to-do list manager in JavaScript for managing daily tasks. Implemented adding and removing tasks with dynamic list updates. Used localStorage to preserve tasks between sessions.',
-    9: 'Designed an HTML table to showcase a minimalist monthly diet plan for one person. Used semantic HTML and CSS for structured and clear data presentation.',
-
+  
     formt: 'Send me a message',
     forml1: 'Name:',
     forml2: 'Email:',
@@ -133,6 +133,7 @@ export const translations = {
     tech: 'Технічні навички:',
     btn: 'Репозиторій',
     btn1: 'Демо-версія',
+    12: 'GENIUS – це цільова сторінка для навчального курсу, створена за допомогою макета Figma. Проєкт реалізовано з сучасним дизайном, з акцентом на заклики до дії (CTA) та чітку структуру контенту. Для динаміки сторінки використовується JavaScript — реалізовано таймер, плавну прокрутку та зміну ціни залежно від обраного тарифу. Проєкт реалізовано без сторонніх фреймворків — лише чистий HTML, CSS та JavaScript.',
      11: 'NeoGallery — це сучасна цільова сторінка в стилі NFT-маркетплейсу для демонстрації рідкісного цифрового мистецтва. Розроблена за допомогою HTML5 та CSS3 як особистий портфоліо-проект.',
     10: 'Explore Indonesia — адаптивна лендинг-сторінка для туристичного сервісу, створена на базі React + Vite.Реалізовано ефекти прокрутки, інтеграцію відео з YouTube, бургер-меню, секції з галереєю та сучасну анімацію.Проєкт повністю адаптований під мобільні пристрої та десктоп і задеплоєний на Vercel.Технології: React, Vite, CSS Modules, Flexbox & CSS Grid, Swiper.js, Font Awesome, YouTube Embed, Parallax Scroll.',
     0: 'Це вебсайт, створений на основі готового дизайну з Figma. Проєкт розроблений з акцентом на чистий код, візуальну привабливість та зручність для користувача.Сайт включає:сучасний інтерфейс,секцію з тарифами та перемикачем місячної/річної оплати,інтерактивні відгуки клієнтів,секцію з логотипами партнерів,стилізовану CTA-зону з кнопкою для зв’язку через месенджер.Використані технології:HTML5, CSS3 (Flexbox/Grid), базова анімація.',
@@ -144,7 +145,7 @@ export const translations = {
     6: 'Розробив застосунок для перегляду та пошуку популярних фільмів на React із використанням публічного API. Реалізував динамічне завантаження трендових фільмів, сторінку деталей для кожного фільму та пошук за назвою. Інтегрував React Router для навігації між сторінками. Додав адаптивний дизайн, анімації та плавні ефекти для покращення вражень користувача.',
     7: 'Створив на React застосунок телефонної книги з керуванням контактами та автентифікацією користувачів. Реалізував реєстрацію та вхід користувачів із збереженням контактів на сервері. Додав функції пошуку контактів і видалення записів, а також валідацію полів форми.',
     8: 'Розробив менеджер списку завдань на JavaScript для керування щоденними завданнями. Реалізував додавання та видалення завдань з динамічним оновленням списку. Використав localStorage для збереження завдань між сеансами.',
-    9: 'Створив HTML-таблицю для демонстрації мінімалістичного місячного плану харчування для однієї особи. Використав семантичний HTML та CSS для структурованого й наочного подання даних.',
+ 
     formt: 'Відправ мені повідомлення',
     forml1: 'Імя:',
     forml2: 'Ел.пошта:',
